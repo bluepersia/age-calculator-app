@@ -19,18 +19,22 @@
 </head>
 <body>
 
-  Day
-  DD
+  <div class="time">
+    <header class="time-inputs">
+      <form class="time-form">
+        <label class="time-label">Day<br/><input class="time-input" type="number" min="1" max="31" placeholder="DD"/></label>
+        <label class="time-label">Month<br/><input class="time-input" type="number" min="1" max="12" placeholder="MM"/></label>
+        <label class="time-label">Year<br/><input class="time-input" type="number" min="1800" max="2024" placeholder="YYYY"/></label>
+      </form>
+      <svg class="time-btn" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+    </header>
+    <main class="time-spans">
+      <h1 class="time-span time-span--years"><span class="val">--</span> year<span class="plural">s</span></h1>
+      <h1 class="time-span time-span--months"><span class="val">--</span> month<span class="plural">s</span></h1>
+      <h1 class="time-span time-span--days"><span class="val">--</span> day<span class="plural">s</span>s</span></h1>
+    </main>
+  </div>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
