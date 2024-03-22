@@ -58,6 +58,7 @@ body
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: .8rem;
+    max-width: 166px;
 }
 
 .time_input {
@@ -65,6 +66,8 @@ body
     font-family: inherit;
     width: 100%;
     padding: .2em .4em;
+    border: solid 1px var(--Lightgrey);
+    border-radius: 8px;
 }
 
 .time_btn-wrapper 
@@ -93,8 +96,42 @@ body
 .time_span {
     font-size: 3rem;
     font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .time_span .val {
     color: var(--Purple);
+}
+
+
+
+
+@media (min-width: 1200px)
+{
+    .time {
+        padding: 3.5em 7.6% 4.68em;
+    }
+    .time_header {
+        padding-bottom: 3em;
+    }
+    
+    .time_input 
+    {
+        font-size: 2rem;
+    }
+
+    .time_btn-wrapper {
+        right: 0px;
+        left: initial;
+        transform: translate(0%, 50%);
+    }
+
+    .time_spans {
+        padding-top: 4.93em;
+    }
+
+    .time_span {
+        font-size: 6rem;
+    }
 }
