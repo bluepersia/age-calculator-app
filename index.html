@@ -20,18 +20,21 @@
 <body>
 
   <div class="time">
-    <header class="time-inputs">
-      <form class="time-form">
-        <label class="time-label">Day<br/><input class="time-input" type="number" min="1" max="31" placeholder="DD"/></label>
-        <label class="time-label">Month<br/><input class="time-input" type="number" min="1" max="12" placeholder="MM"/></label>
-        <label class="time-label">Year<br/><input class="time-input" type="number" min="1800" max="2024" placeholder="YYYY"/></label>
+    <header class="time_header">
+      <form class="time_form">
+        <div class="time_inputs">
+        <label class="time_label">Day<br/><input class="time_input" type="number" min="1" max="31" placeholder="DD"/></label>
+        <label class="time_label">Month<br/><input class="time_input" type="number" min="1" max="12" placeholder="MM"/></label>
+        <label class="time_label">Year<br/><input class="time_input" type="number" min="1800" max="2024" placeholder="YYYY"/></label>
+      </div>
+        <div class="time_btn-wrapper"><svg class="time_btn" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></div>
       </form>
-      <svg class="time-btn" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      
     </header>
-    <main class="time-spans">
-      <h1 class="time-span time-span--years"><span class="val">--</span> year<span class="plural">s</span></h1>
-      <h1 class="time-span time-span--months"><span class="val">--</span> month<span class="plural">s</span></h1>
-      <h1 class="time-span time-span--days"><span class="val">--</span> day<span class="plural">s</span>s</span></h1>
+    <main class="time_spans">
+      <h1 class="time_span time_span--years"><span class="val">--</span> year<span class="plural">s</span></h1>
+      <h1 class="time_span time_span--months"><span class="val">--</span> month<span class="plural">s</span></h1>
+      <h1 class="time_span time_span--days"><span class="val">--</span> day<span class="plural">s</span></span></h1>
     </main>
   </div>
 
