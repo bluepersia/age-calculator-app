@@ -13,7 +13,9 @@
 body 
 {
     margin:0;
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
+    padding: 5.43em 4.2% 14.8em;
+    background-color: var(--Offwhite);
 }
 
 * {
@@ -28,4 +30,71 @@ body
     margin-bottom: 0;
 }
 
+.time 
+{
+    background-color: var(--White);
+    box-shadow: 5px 5px 10px var(--Lightgrey);
+    border-radius: 8px;
+    border-bottom-right-radius: 64px;
+    padding: 3.125em 7% 3.75em;
+}
 
+
+.time_header {
+    border-bottom: 1px solid var(--Lightgrey);
+    position: relative;
+    padding-bottom: 3.875em;
+}
+
+
+.time_inputs{
+    display: flex;
+    gap: 5.8%;
+}
+
+.time_label {
+    width: 33%;
+    color: var(--Smokeygrey);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8rem;
+}
+
+.time_input {
+    font-size: 1.4rem ;
+    font-family: inherit;
+    width: 100%;
+    padding: .2em .4em;
+}
+
+.time_btn-wrapper 
+{
+    width: fit-content;
+    padding: 1.25em;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: background-color 300ms;
+    
+}
+
+.time_btn-wrapper:hover 
+{
+    background-color: var(--Offblack);
+}
+
+.time_spans {
+    padding-top: 4.5em;
+}
+
+.time_span {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.time_span .val {
+    color: var(--Purple);
+}
