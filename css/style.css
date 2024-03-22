@@ -1,7 +1,7 @@
 :root 
 {
     --Purple: hsl(259, 100%, 65%);
-    -Lightred: hsl(0, 100%, 67%);
+    --Lightred: hsl(0, 100%, 67%);
 
     --White: hsl(0, 0%, 100%);
     --Offwhite: hsl(0, 0%, 94%);
@@ -59,7 +59,16 @@ body
     letter-spacing: .2em;
     font-size: .8rem;
     max-width: 166px;
+    position: relative;
+    transition: color 300ms;
 }
+
+.time_label.invalid 
+{
+    color: var(--Lightred);
+}
+
+
 
 .time_input {
     font-size: 1.4rem ;
@@ -68,6 +77,12 @@ body
     padding: .2em .4em;
     border: solid 1px var(--Lightgrey);
     border-radius: 8px;
+    transition: border-color 300ms;
+}
+
+.time_label.invalid .time_input
+{
+    border-color: var(--Lightred);
 }
 
 .time_btn-wrapper 
@@ -106,6 +121,24 @@ body
 
 
 
+.time_error {
+    opacity: 0%;
+    pointer-events: all;
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(100%);
+    color: var(--Lightred);
+    font-weight: lighter;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 1rem;
+
+}
+.time_label.invalid .time_error
+{
+    opacity: 100%;
+}
 
 @media (min-width: 1200px)
 {
